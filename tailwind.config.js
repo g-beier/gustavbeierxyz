@@ -4,9 +4,13 @@ module.exports = {
     content: ["./src/**/*.html"],
     theme: {
         fontFamily: {
-            sans: ["'Fira Sans'", ...defaultTheme.fontFamily.sans],
+            ...defaultTheme.fontFamily,
+            sans: ["'Space Grotesk'", ...defaultTheme.fontFamily.sans],
         },
         extend: {
+            boxShadow: {
+                sharp: "6px 8px rgb(0 0 0)",
+            },
             colors: {
                 laurel: {
                     DEFAULT: "#C4C7C2",
